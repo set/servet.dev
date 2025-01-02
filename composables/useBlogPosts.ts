@@ -10,7 +10,7 @@ export const useBlogPosts = async () => {
       title: post.title,
       date: post.date,
       excerpt: post.description,
-      slug: post._path
+      slug: post._path.split('/').pop()
     })) as BlogPost[]
   }
 }
