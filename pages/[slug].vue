@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 const { path } = useRoute()
-const { data } = await useAsyncData(`content-${path}`, () => queryContent().where({ _path: path }).findOne())
+const { data } = await useAsyncData(`content-blog-${path}`, () => queryContent('blog', path).findOne())
 
 if (!data.value) {
   throw createError({ statusCode: 404, message: 'Post not found' })
