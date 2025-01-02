@@ -4,7 +4,7 @@
     <div class="absolute inset-0 flex items-center justify-center">
       <div class="w-32 h-32 rounded-lg overflow-hidden border-4 border-white">
         <img 
-          src="https://placehold.co/400x400/222/fff?text=Profile" 
+          src="/servettuncel.png" 
           alt="Profile" 
           class="w-full h-full object-cover"
         >
