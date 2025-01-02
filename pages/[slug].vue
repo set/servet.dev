@@ -26,4 +26,18 @@ const formatDate = (date: string) => {
     day: 'numeric'
   })
 }
+
+useHead({
+  title: data.value.title,
+  meta: [
+    { name: 'description', content: data.value.description },
+    { property: 'og:title', content: data.value.title },
+    { property: 'og:description', content: data.value.description },
+    { property: 'og:type', content: 'article' },
+    { property: 'article:published_time', content: data.value.date },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: data.value.title },
+    { name: 'twitter:description', content: data.value.description }
+  ]
+})
 </script>
